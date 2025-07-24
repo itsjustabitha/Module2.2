@@ -1,0 +1,265 @@
+/* I added this table stying to my css file so I can stay better organized. Personal pref.  */
+
+Table{border-collapse: collapse;}
+  table, tr, th, td {
+      border: 1px solid black;
+  }
+
+
+.article {
+margin: 20px 0;
+padding: 20px;
+border: 1px solid black;
+}
+
+/* I assumed that this portion was still refering to the articles, 
+so I decided to focus on the title of each aticle.  */
+
+.style-me1 {
+    color: red;
+  }
+
+  /* I got ahead of myself and started off using class for all of my selectors. 
+  After re-reading, I see I needed to also use ID and a specific selector. 
+  Keeping my old code in comments so you can see where I started.
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors 
+  
+  .style-me2 {
+    color: blue;
+  } */
+
+  #style-me2 {
+    color: blue;
+  }
+
+  /* .style-me3 {
+    color: purple;
+  } */
+
+  /* I broke my code when I moved it to the next line
+  And when I spaced it out. I wanted to see if my selectors needed to be side by side.
+    Everytime I added space between them, my font turned blue. 
+
+    .style-me1
+    #style-me2 {
+    color: purple;
+  } 
+
+  .style-me1 #style-me2 {
+    color: purple;
+  } */
+
+  .style-me1#style-me2 {
+    color: purple;
+  }
+
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors/Selectors_and_combinators#descendant_combinator 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_combinator
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator 
+  
+  I'm a little confused on where I should add my element in my html code. 
+  Should I place it in all my 'p's or should I add a div?  
+  Update: I tried it in the <p> element but after a couple google searches, I realized that <p> is not a parent element. 
+  I wrapped my text in a <div> parent element. 
+  */
+
+  .my-descendants-are-styled p {
+    background: red;
+  }
+
+  .my-children-are-styled p {
+    background: lightgreen;
+  } 
+
+  
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascade/Shorthand_properties
+
+  4-value syntax (TESTING) */
+
+  /* .box1 {
+    background-color: lightblue;
+    margin: 40px 40px 40px 40px;
+    padding: 5px 5px 5px 5px;
+  }  */
+
+ /* .box1 {
+    background-color: lightblue;
+    margin: 40px 30px 40px 30px;
+    padding: 5px 5px 5px 5px;
+  }  */
+
+   /* .box1 {
+    background-color: lightblue;
+    margin: 40px 20px 40px 20px;
+    padding: 5px 5px 5px 5px;
+  }  */
+
+  /* .box1 {
+    background-color: lightblue;
+    margin: 40px 10px 40px 10px;
+    padding: 5px 5px 5px 5px;
+  } */
+
+ /* .box1 {
+    background-color: lightblue;
+    margin: 40px 5px 40px 5px;
+    padding: 5px 5px 5px 5px;
+  } */
+
+  /* .box1 {
+    background-color: lightblue;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+  } */
+
+
+  /* 2-value syntax (TESTING) */
+
+  /* .box2 {
+    background-color: lightblue;
+    margin: 20px 40px;
+    padding: 10px 25px;
+  } */
+
+  /* .box2 {
+    background-color: lightblue;
+    margin: 20px 30px;
+    padding: 10px 20px;
+  } */
+
+    /* .box2 {
+    background-color: lightblue;
+    margin: 10px 20px;
+    padding: 10px 10px;
+  } */
+
+  /* .box2 {
+    background-color: lightblue;
+    margin: 5px 5px;
+    padding: 5px 5px;
+  } */
+
+  
+/* 1-value syntax (TESTING) */
+
+  /* .box3 {
+    background-color: lightblue;
+    margin: 30px;
+    padding: 15px;
+  }
+
+  .box3 {
+    background-color: lightblue;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .box3 {
+    background-color: lightblue;
+    margin: 10px;
+    padding: 5px;
+  } */
+  
+
+  /* Practice setting width and height : 
+  1. https://elementor.com/help/whats-the-difference-between-px-em-rem-vw-and-vh/
+  2. https://www.w3schools.com/cssref/css_units.php
+  3. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units
+
+Relative Units
+EM: Relative to the parent element
+
+REM: Relative to the root element (HTML tag)
+
+%: Relative to the parent element
+
+VW: Relative to the viewport’s width
+
+VH: Relative to the viewport’s height */
+
+/* (TESTING) */
+
+  /* .box1 {
+    background-color: rgb(62, 14, 89);
+    width: 200px;
+    height: 150px;
+  } */
+
+  /* .box1 {
+    background-color: rgb(62, 14, 89);
+    width: 100px;
+    height: 100px;
+  } */
+
+  /* .box1 {
+    background-color: rgb(62, 14, 89);
+    width: 400px;
+    height: 400px;
+  } */
+
+  /* .box2 {
+    background-color: rgb(17, 5, 84);
+    width: 10rem;
+    height: 5rem;
+  } */
+
+  /* .box2 {
+    background-color: rgb(17, 5, 84);
+    width: 40rem;
+    height: 5rem;
+  }  */
+
+  /* .box2 {
+    background-color: rgb(17, 5, 84);
+    width: 5rem;
+    height: 5rem;
+  } */
+
+  /* .box3 {
+    background-color: rgb(203, 173, 230);
+    width: 50vw;
+    height: 30vh;
+  } */
+
+  /* .box4 {
+    background-color: rgb(60, 63, 64);
+    margin: 30px;
+    padding: 100px;
+  } */
+  
+  /* Practice adding a border : https://www.scaler.com/topics/border-styles-css/ */
+  /* The box-sizing property : https://css-tricks.com/almanac/properties/b/box-sizing/ */
+
+
+  .box1 {
+    background-color: rgb(62, 14, 89);
+    border: 10px solid red;
+    width: 200px;
+    height: 150px;
+    box-sizing: content-box; 
+    overflow: hidden;               
+  }
+
+  .box2 {
+    background-color: rgb(17, 5, 84);
+    border: 10px dashed green;
+    width: 200px;
+    height: 150px;
+    box-sizing: border-box;
+  }
+
+  .box3 {
+    background-color: rgb(203, 173, 230);
+    border: 10px dotted purple;
+    width: 200px;
+    height: 150px;
+    box-sizing: inherit;
+  }
+
+  .box4 {
+    background-color: rgb(60, 63, 64);
+    border: 10px groove red;
+    width: 200px;
+    height: 150px;
+  }

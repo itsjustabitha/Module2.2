@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--I'm very familar with Charset, lang, and viewport b/c it shows up in the pre-made html code 
+  but I'm a hundred percent confident with Keywords, desctiption or Author.. 
+  I did some google searches to reconfirm how they should look-->
+  <title>Tabitha Codes</title>
+
+  <!-- I prefer working on the css in an external file. -->
+
+  <link href="index.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Class Project.">
+  <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+  <meta name="author" content="Tabitha">
+
+  <!-- This was the assignment code, I noticed my table didn't change so I added tr to see if that would help. It Didn't.
+   I then googled "how do I get a single solid line in a html table" - google told me border-collapse, I tried it and it worked.<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style> -->
+
+<!-- I moved this style code to my css file <style>
+  Table{border-collapse: collapse;}
+  table, tr, th, td {
+      border: 1px solid black;
+  }
+</style>-->
+
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- works like <a href="/index.html">Home</a> -->
+      <a href="/">Home</a>
+      <a href="form.html">Form</a>
+    </nav>
+  </header>
+
+  <main>  
+  </main>
+  
+  <h1>My HTML learning journey</h1>
+
+  <!--<article> I needed to add a class for my css file.I changed all my articles to include a class.-->
+  <article class="article">
+
+   <h2 class="style-me1">Learning elements - div, span, p, pre, ul, li, ol, article</h2> 
+
+  <div>HTML</div> <div>CSS</div> <div>JavaScript</div>
+
+  <span>Span 01</span>
+  <span>Span 02</span>
+  <span>Span 03</span>
+  
+  <!-- I googled some dumbie text as a place holder. -->
+ <!-- My original paragraph: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at interdum ligula. Ut convallis ipsum at leo ultricies, sit amet suscipit elit gravida. 
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit urna purus, at porttitor mauris commodo a. 
+    Aenean eu nisi ac nisl gravida viverra ac in orci. Donec ac massa condimentum, condimentum quam ac, suscipit turpis. Curabitur fermentum tempor sagittis. 
+    Aenean ac enim vitae tellus tristique pulvinar non ut ante. Aliquam erat volutpat. Sed sed sodales metus. Vestibulum maximus lacus id dui efficitur aliquet. 
+    Vestibulum convallis, nunc et dictum euismod, odio dui ullamcorper urna, sit amet iaculis nunc nisl ac lorem.</p>
+  
+    Trying the class in my <p> element to test.
+     
+     Didn't work: <p class="my-descendants-are-styled">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at interdum ligula. Ut convallis ipsum at leo ultricies, sit amet suscipit elit gravida. 
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit urna purus, at porttitor mauris commodo a. 
+      Aenean eu nisi ac nisl gravida viverra ac in orci. Donec ac massa condimentum, condimentum quam ac, suscipit turpis. Curabitur fermentum tempor sagittis. 
+      Aenean ac enim vitae tellus tristique pulvinar non ut ante. Aliquam erat volutpat. Sed sed sodales metus. Vestibulum maximus lacus id dui efficitur aliquet. 
+      Vestibulum convallis, nunc et dictum euismod, odio dui ullamcorper urna, sit amet iaculis nunc nisl ac lorem.</p> 
+      
+      From what I'm seeing via my google searches, to use the parent and child selectors I need to 
+      ensure I'm using a parent element. <p>  can be used as a parent element depending on the code but I think we're looking 
+      for an actual parent element so I'm going to test this out by attempting to wrap my text using <div>.
+
+     https://forum.freecodecamp.org/t/parent-element-and-child-element/453992
+
+     http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html#:~:text=A%20parent%20is%20an%20element,element%20in%20the%20document%20tree.
+     
+      -->
+
+      <div class="my-descendants-are-styled"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at interdum ligula. Ut convallis ipsum at leo ultricies, sit amet suscipit elit gravida. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit urna purus, at porttitor mauris commodo a. 
+        Aenean eu nisi ac nisl gravida viverra ac in orci. Donec ac massa condimentum, condimentum quam ac, suscipit turpis. Curabitur fermentum tempor sagittis. 
+        Aenean ac enim vitae tellus tristique pulvinar non ut ante. Aliquam erat volutpat. Sed sed sodales metus. Vestibulum maximus lacus id dui efficitur aliquet. 
+        Vestibulum convallis, nunc et dictum euismod, odio dui ullamcorper urna, sit amet iaculis nunc nisl ac lorem.</p></div>
+
+
+  <pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Integer at interdum ligula. 
+    Ut convallis ipsum at leo ultricies, sit amet suscipit elit gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+    Donec suscipit urna purus, at porttitor mauris commodo a. Aenean eu nisi ac nisl gravida viverra ac in orci. 
+    Donec ac massa condimentum, condimentum quam ac, suscipit turpis. Curabitur fermentum tempor sagittis. 
+    Aenean ac enim vitae tellus tristique pulvinar non ut ante. Aliquam erat volutpat. Sed sed sodales metus. 
+    Vestibulum maximus lacus id dui efficitur aliquet. 
+    Vestibulum convallis, nunc et dictum euismod, odio dui ullamcorper urna, sit amet iaculis nunc nisl ac lorem.</pre>
+  
+    <!-- My original paragraph: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at interdum ligula. Ut convallis ipsum at leo ultricies, sit amet suscipit elit gravida. 
+      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit urna purus, at porttitor mauris commodo a. 
+      Aenean eu nisi ac nisl gravida viverra ac in orci. Donec ac massa condimentum, condimentum quam ac, suscipit turpis. Curabitur fermentum tempor sagittis. 
+      Aenean ac enim vitae tellus tristique pulvinar non ut ante. Aliquam erat volutpat. Sed sed sodales metus. Vestibulum maximus lacus id dui efficitur aliquet. 
+      Vestibulum convallis, nunc et dictum euismod, odio dui ullamcorper urna, sit amet iaculis nunc nisl ac lorem.</p> -->
+
+    <div class="my-children-are-styled"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at interdum ligula. Ut convallis ipsum at leo ultricies, sit amet suscipit elit gravida. 
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec suscipit urna purus, at porttitor mauris commodo a. 
+        Aenean eu nisi ac nisl gravida viverra ac in orci. Donec ac massa condimentum, condimentum quam ac, suscipit turpis. Curabitur fermentum tempor sagittis. 
+        Aenean ac enim vitae tellus tristique pulvinar non ut ante. Aliquam erat volutpat. Sed sed sodales metus. Vestibulum maximus lacus id dui efficitur aliquet. 
+        Vestibulum convallis, nunc et dictum euismod, odio dui ullamcorper urna, sit amet iaculis nunc nisl ac lorem.</p></div>
+
+      
+    <ul>
+    <li>Hi, This is my unordered list - put something here.</li>
+    <li>Hello, This is my unordered list - put something here.</li>
+    <li>Hola, This is my unordered list - put something here.</li>
+    <li>Ello, This is my unordered list - put something here. <!-- This was closed but I'm opening it to add my nested list.-->
+      <ul>
+        <li>Hey, hi, This is my nested list - put something here.</li>
+        <li>Hey, hi, hello, This is my nested list - put something here.</li>
+      </ul> 
+      </li>
+
+    <ol>
+      <li>Hi, This is my ordered list - put something here.</li>
+      <li>Hello, This is my ordered list - put something here.</li>
+      <li>Hola, This is my ordered list - put something here.</li>
+    </ol>
+
+  </article>
+
+  <article class="article">
+
+    <h2 id="style-me2">This is my unique h2 tag</h2>
+    <!--Table code found and copied from https://www.programiz.com/html/table-->
+    <!--my copied code included some styling, which I've commented out. "<table border="1" >" -->
+
+      <table>
+      <tr>
+        <th>This is my First Header</th>
+        <th>This is my Second Header</th>  
+        <th colspan="2">This is my Third Header</th> <!--This is where I added the colspan, it was just th before the colspan-->
+      </tr>
+      <tr>
+        <td rowspan="2">First cell - first row</td> <!--This is where I added my rowspan="2", it was a regular row before adding rowspan-->
+        <td>Second cell - first row</td>
+        <td>Third cell - first row</td>
+      </tr>
+      <tr>
+        <td>First cell - Second row</td>
+        <td>Second cell - Second row</td>
+        <td>Third cell - Second row</td>
+      </tr>
+      <tr>
+        <td>First cell - Third row</td>
+        <td>Second cell - Third row</td>
+        <td>Third cell - Third row</td>
+        <td>Fourth cell - Third row</td> <!--This is where I added on to see how it shapes the table. Here's where I got a little confused,
+        We were asked to google a table and copy it.. My table was already formatted with 'table, tr, th, and td' and on this portion it's asking us to add a third cell in one 
+        of the rows and it's suppose to loose it's shape, but mine didn't. Mine created addtional rows for 'row 1 and row 2' to accomodate for the Fourth Cell that I created.
+        It then asks us to add a td tag on the other rows to fix this. I don't know if mine 'broke' the way it was suppoused to.-->
+  
+      </tr>
+    </table>
+  </article>
+
+  <article class="article">
+
+    <!-- This is what I started with: <h2>This is my second unique h2 tag</h2>
+    I made all my changes as classes, but the instructions wanted an ID and class:
+    <h2 class="style-me3">This is my second unique h2 tag</h2>-->
+
+    <h2 class="style-me1" id="style-me2">This is my second unique h2 tag</h2>
+    
+    <img src="https://picsum.photos/400/400" alt="New photo everytime you refresh" />
+
+    <!-- Here I played around with sizing.
+    <img src="https://picsum.photos/400/400" alt="New photo everytime you refresh" Width="600" />
+    <img src="https://picsum.photos/400/400" alt="New photo everytime you refresh" height="500"/>
+    <img src="https://picsum.photos/400/400" alt="New photo everytime you refresh" Width="400" height="400"/>
+    -->
+
+    <img src="assets/html_lab_image.jpg" alt="HTML lab graphic" width="400" height="400"/>
+
+    <!-- I'm doing something wrong here and I can't tell what, b/c my second video disappeared - is it b/c it's now on autoplay
+     or did I add autoplay incorrectly? Code Below:
+     
+     <video controls width="250">
+      <source src="/assets/flower.webm" type="video/webm">
+      Sorry, your browser doesn't support embedded videos.
+    </video>
+    <figure>
+    <audio controls src="/assets/t-rex-roar.mp3">
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+    <figcaption>A recording of a T-Rex roar</figcaption>
+  </figure> -->
+
+  <video autoplay width="250">
+    <source src="/assets/flower.webm" type="video/webm">
+    Sorry, your browser doesn't support embedded videos.
+  </video>
+
+  <figure>
+  <audio autoplay src="/assets/t-rex-roar.mp3">
+    Your browser does not support the <code>audio</code> element.
+  </audio>
+
+  <figcaption>A recording of a T-Rex roar</figcaption>
+
+  </figure>
+  </article>
+
+  <!-- II. Box model and common properties. I created some boxes for this portion.  -->
+    <div class="box1">
+      <h3>Box 1</h3>
+      Aenean rutrum ipsum eget enim tincidunt sodales. Maecenas in urna non sapien sagittis ornare. 
+      Etiam laoreet, neque in aliquet tempus, felis lorem consequat velit, et ornare mi ex eget turpis. 
+      Vivamus id scelerisque eros, in ultricies nisi. 
+      Vestibulum tempus dapibus vestibulum. Suspendisse euismod dui non felis molestie eleifend. 
+      Suspendisse faucibus blandit laoreet. Cras rhoncus quis leo sed tempor. 
+      Vivamus sed diam sit amet tortor elementum suscipit.
+    </div>
+
+    <div class="box2">
+     <h3>Box 2</h3> 
+     Aenean rutrum ipsum eget enim tincidunt sodales. Maecenas in urna non sapien sagittis ornare. 
+     Etiam laoreet, neque in aliquet tempus, felis lorem consequat velit, et ornare mi ex eget turpis. 
+     Vivamus id scelerisque eros, in ultricies nisi. 
+     Vestibulum tempus dapibus vestibulum. Suspendisse euismod dui non felis molestie eleifend. 
+     Suspendisse faucibus blandit laoreet. Cras rhoncus quis leo sed tempor. 
+     Vivamus sed diam sit amet tortor elementum suscipit.
+    </div>
+
+
+    <div class="box3">
+      <h3>Box 3</h3>
+      Aenean rutrum ipsum eget enim tincidunt sodales. Maecenas in urna non sapien sagittis ornare. 
+      Etiam laoreet, neque in aliquet tempus, felis lorem consequat velit, et ornare mi ex eget turpis. 
+      Vivamus id scelerisque eros, in ultricies nisi. 
+      Vestibulum tempus dapibus vestibulum. Suspendisse euismod dui non felis molestie eleifend. 
+      Suspendisse faucibus blandit laoreet. Cras rhoncus quis leo sed tempor. 
+      Vivamus sed diam sit amet tortor elementum suscipit.
+    </div>
+
+
+    <div class="box4">
+      <h3>Box 4</h3>
+      Aenean rutrum ipsum eget enim tincidunt sodales. Maecenas in urna non sapien sagittis ornare. 
+      Etiam laoreet, neque in aliquet tempus, felis lorem consequat velit, et ornare mi ex eget turpis. 
+      Vivamus id scelerisque eros, in ultricies nisi. 
+      Vestibulum tempus dapibus vestibulum. Suspendisse euismod dui non felis molestie eleifend. 
+      Suspendisse faucibus blandit laoreet. Cras rhoncus quis leo sed tempor. 
+      Vivamus sed diam sit amet tortor elementum suscipit.</div>
+
+
+
+
+    <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>

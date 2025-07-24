@@ -1,0 +1,22 @@
+// I'm not very confident in my JSON. 
+// What I'm attempting to do is have my information in my Form come to my json. 
+// If I do this right, the data SHOULD show up in my '[]' bracets and terminal.
+
+// https://youtu.be/CVaCZsAAHZE?si=NRTeARKvq89UmWow
+
+//https://stackoverflow.com/questions/40228498/syntaxerror-json-parse-error-unrecognized-token
+
+// I keep getting an error message, I believe I'll need to add some Javascipt, I may need to come back to this later. 
+
+
+//{
+  //  "profile": []
+ // }
+
+
+  {
+    "name": [],
+    "fav_language": [],
+    "vehicle": [],
+    "carBrand": [],
+  }
