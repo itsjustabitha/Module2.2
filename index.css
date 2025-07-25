@@ -231,35 +231,69 @@ VH: Relative to the viewport’s height */
   /* Practice adding a border : https://www.scaler.com/topics/border-styles-css/ */
   /* The box-sizing property : https://css-tricks.com/almanac/properties/b/box-sizing/ */
 
+  /* overflow: 
+  1. https://www.w3schools.com/cssref/pr_pos_overflow.php#:~:text=The%20overflow%20property%20specifies%20what,elements%20with%20a%20specified%20height.
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/overflow */
 
+  /* Updating my divs to be side by side: https://www.w3schools.com/html/html_div.asp */
+
+  /*  6. Outline: https://www.w3schools.com/css/css_outline.asp
+    
   .box1 {
     background-color: rgb(62, 14, 89);
-    border: 10px solid red;
+    outline: 10px solid red;
     width: 200px;
     height: 150px;
     box-sizing: content-box; 
-    overflow: hidden;               
-  }
+    overflow: hidden; 
+    float: left;              
+  } */
+
+  /* 7. Use border-radius to affect the box corners : */
+
+   .box1 {
+    background-color: rgb(62, 14, 89);
+    border: 10px solid red;
+    width: 500px;
+    height: 300px;
+    box-sizing: content-box; 
+    overflow: hidden; 
+    float: left; 
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;             
+  } 
 
   .box2 {
-    background-color: rgb(17, 5, 84);
+    background-color: rgb(78, 53, 224);
     border: 10px dashed green;
-    width: 200px;
+    width: 500px;
     height: 150px;
     box-sizing: border-box;
+    overflow: scroll;
+    float: left;  
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
   }
 
-  .box3 {
+ .box3 {
     background-color: rgb(203, 173, 230);
     border: 10px dotted purple;
-    width: 200px;
+    width: 500px;
     height: 150px;
     box-sizing: inherit;
+    overflow: auto;
+    float: left; 
+    padding: 5px 5px 5px 5px; 
+    border-radius: 30px;
   }
 
   .box4 {
-    background-color: rgb(60, 63, 64);
+    background-color: rgb(182, 186, 187);
     border: 10px groove red;
-    width: 200px;
-    height: 150px;
-  }
+    width: 500px;
+    height: 300px;
+    overflow: visible;
+    float: left;  
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+  } 
