@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
   <!--I'm very familar with Charset, lang, and viewport b/c it shows up in the pre-made html code 
   but I'm a hundred percent confident with Keywords, desctiption or Author.. 
   I did some google searches to reconfirm how they should look-->
@@ -33,7 +37,9 @@
 
 </head>
 
-<body>
+<!-- <body> - added a class for text styling.  -->
+
+<body class="text-style">
   <header>
     <nav>
       <!-- works like <a href="/index.html">Home</a> -->
@@ -42,13 +48,22 @@
     </nav>
   </header>
 
-  <main>  
+  <main class="main-content">  
+    <div class="fixed-width-col">
+      <h2>Hi, this is my Sidebar</h2>
+      <p>Hello, my name is Tabitha.</p>
+    </div>
+
+    <div class="fluid-col">
+      <h2>Hello, this is my Main Content and not my side bar.</h2>
+      <p>Hi there, my last name is Miller.</p>
+    </div>
   </main>
   
   <h1>My HTML learning journey</h1>
 
   <!--<article> I needed to add a class for my css file.I changed all my articles to include a class.-->
-  <article class="article">
+  <article class="article1">
 
    <h2 class="style-me1">Learning elements - div, span, p, pre, ul, li, ol, article</h2> 
 
@@ -131,7 +146,7 @@
 
   </article>
 
-  <article class="article">
+  <article class="article2">
 
     <h2 id="style-me2">This is my unique h2 tag</h2>
     <!--Table code found and copied from https://www.programiz.com/html/table-->
@@ -166,7 +181,7 @@
     </table>
   </article>
 
-  <article class="article">
+  <article class="article3">
 
     <!-- This is what I started with: <h2>This is my second unique h2 tag</h2>
     I made all my changes as classes, but the instructions wanted an ID and class:
@@ -239,6 +254,8 @@
       Aenean rutrum ipsum eget enim tincidunt sodales. Maecenas in urna non sapien sagittis ornare. 
       Etiam laoreet, neque in aliquet tempus, felis lorem consequat velit, et ornare mi ex eget turpis. 
 </div>
+
+
 
 
 

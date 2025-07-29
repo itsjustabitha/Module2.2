@@ -1,3 +1,259 @@
+/* IV. Styling text 
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals 
+Color - https://www.w3schools.com/css/css_text.asp
+
+Alignment - https://www.w3schools.com/css/css_text_align.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
+
+Decoration - https://www.w3schools.com/css/css_text_decoration.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+
+Transftion - https://www.w3schools.com/css/css_text_transformation.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+
+Spacing - https://www.w3schools.com/css/css_text_spacing.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
+https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing
+
+Font Weight - https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
+
+*/
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align: start;
+  
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align: end;
+  
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align: center;
+  
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align: justify;
+  
+} */
+
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: normal;
+
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 1px;
+
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: -1px;
+
+} */
+
+/* 
+.text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+  word-spacing: normal;
+} */
+ 
+/* 
+.text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+  word-spacing: 1rem;
+} */
+
+/* 
+.text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+  word-spacing: 4px;
+} */
+
+/* 
+.text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+  word-spacing: -0.4ch;
+} */
+
+
+/* 
+.text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+  word-spacing: normal;
+  text-transform: capitalize;
+} */
+
+/* 
+.text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+  word-spacing: normal;
+  text-transform: uppercase;
+} */
+
+/* 
+.text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 0.2rem;
+  word-spacing: normal;
+  text-transform: lowercase;
+} */
+
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-transform: none;
+  text-decoration: underline;
+} */
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-transform: none;
+  text-decoration: underline dotted;
+} */
+
+
+/* .text-style {
+  font-family: 'DM Mono', monospace;
+  text-align:  start;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-transform: none;
+  text-decoration: green wavy underline;
+} */
+
+.text-style {
+  font-family: 'DM Mono', monospace;
+  color: #000000;
+  font-size: 12;
+  font-weight: lighter;
+  text-align:  start;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-transform: none;
+  text-decoration: green wavy underline;
+}
+
+
+.dm-mono-light {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.dm-mono-regular {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dm-mono-medium {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dm-mono-light-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.dm-mono-regular-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.dm-mono-medium-italic {
+  font-family: "DM Mono", monospace;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Styling links - https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Styling_links 
+https://www.w3schools.com/css/css_link.asp
+
+- I asked Chatgpt what 'a {moutline-color: transparent;}' meant b/c I wasn't very confident. It stated "This rule is saying:
+
+“When the <a> (link) element gets focused (e.g., clicked or tabbed to), make the outline’s color invisible.”".
+
+*/
+
+a {
+  outline-color: transparent;
+}
+
+a:link {
+  color: #bc126a;
+}
+
+a:visited {
+  color: #d2420e;
+}
+
+a:focus {
+
+  text-decoration: none;
+  background: #d6f009;
+}
+
+a:hover {
+  text-decoration: none;
+  background: #0eadde;
+}
+
+a:active {
+  background: #6900ff;
+  color: #cdfeaa;
+}
+
+
+
 /* I added this table stying to my css file so I can stay better organized. Personal pref.  */
 
 Table{border-collapse: collapse;}
@@ -5,12 +261,77 @@ Table{border-collapse: collapse;}
       border: 1px solid black;
   }
 
-
+/* Absolute positioning - This was my original article. I needed to re-classify each so I could style article3: 
 .article {
 margin: 20px 0;
 padding: 20px;
 border: 1px solid black;
-}
+} */
+
+/* .article1 {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+  } */
+
+  /* .article2 {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+    } */
+
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/position  */
+
+    /* .article3 {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: pink;
+      } */
+
+    /* .article3 {
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid black;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: pink;
+      } */
+
+      .article1 {
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid black;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: pink;
+        } 
+
+      /* Sticking 10 pixels from the top of page. */
+
+       .article2 {
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid black;
+        position: sticky;
+        top: 10px;
+        background-color: gold;
+        } 
+
+      .article3 {
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid black;
+        position: relative;
+        background-color: orange;
+        }
+
+
 
 /* I assumed that this portion was still refering to the articles, 
 so I decided to focus on the title of each aticle.  */
@@ -286,8 +607,6 @@ VH: Relative to the viewport’s height */
     border-radius: 20px;             
   }  */
 
-  
-
   .box2 {
     background-color: rgb(78, 53, 224);
     border: 10px dashed green;
@@ -322,3 +641,37 @@ VH: Relative to the viewport’s height */
     padding: 5px 5px 5px 5px;
     border-radius: 5px;
   } 
+
+
+  /* VI. calc() 
+  https://developer.mozilla.org/en-US/docs/Web/CSS/calc 
+  https://css-tricks.com/a-complete-guide-to-calc-in-css/
+  https://stackoverflow.com/questions/21224411/css-calc-viewport-units-workaround
+  Having a little trouble figruring out where I should put my class selctor for this portion of my assisgnment. 
+  I asked ChatGPT to review my html code and tell me the best place to add in my  "calc-style, fixed-width-col, and fluid-col"?
+  According to ChatGPT I should put it in <main> - will google to reconfirm. 
+
+  https://stackoverflow.com/questions/24531171/fluid-and-fixed-column
+  https://www.sitepoint.com/community/t/combining-fluid-and-fixed-width-type-in-one-column/59403/4
+  https://css-tricks.com/a-complete-guide-to-calc-in-css/
+  */
+
+  .main-content {
+    width: 100vw; 
+    background-color: lightblue; 
+    
+    
+    /* width: calc(100vw - 100px);  */
+  }
+
+  .fixed-width-col {
+    width: 350px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .fluid-col {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 350px);
+  }
